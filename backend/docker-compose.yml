@@ -23,3 +23,12 @@ services:
     ports:
       - "9092:9092"
       - "29092:29092"
+
+# --- DATABASES ---
+  mysql_user:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_DATABASE: anjs
+    ports:
+      - "3307:3306"
